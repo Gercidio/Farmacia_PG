@@ -6,7 +6,7 @@ function Footer() {
     <>
         <div className="flex justify-center bg-sky-950 text-white">
           <div className="container flex flex-col items-center py-4">
-            <p className='text-xl font-bold'>Genesis 16bit - Generation | Copyright: 2024</p>
+            <p className='text-xl font-bold'>FarmaGen - Generation | Copyright: 2024</p>
             <p className='text-lg'>Acesse nossas redes sociais</p>
             <div className='flex gap-2'>
             <a href="https://github.com/gercidio" target='_blank'><GithubLogo size={48} weight='bold'/></a>
