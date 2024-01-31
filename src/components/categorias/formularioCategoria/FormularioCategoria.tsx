@@ -45,10 +45,10 @@ function FormularioCategoria() {
                 await atualizar(`/categorias`, categoria, setCategoria)
 
                 alert('Categoria atualizado com sucesso')
-            
+
             } catch (error: any) {
-              
-                    alert('Erro ao atualizar a Categoria')
+
+                alert('Erro ao atualizar a Categoria')
             }
 
         } else {
@@ -58,9 +58,9 @@ function FormularioCategoria() {
                 alert('Categoria cadastrado com sucesso')
 
             } catch (error: any) {
-   
-                    alert('Erro ao cadastrar a Categoria')
-                
+
+                alert('Erro ao cadastrar a Categoria')
+
             }
         }
 
@@ -76,7 +76,7 @@ function FormularioCategoria() {
     return (
         <div className="container flex flex-col items-center justify-center mx-auto">
             <h1 className="text-4xl text-center my-8">
-                {id === undefined ? 'Cadastre um novo Categoria' : 'Editar Categoria'}
+                {id === undefined ? 'Cadastre uma nova Categoria' : 'Editar Categoria'}
             </h1>
 
             <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovoCategoria}>
@@ -87,7 +87,7 @@ function FormularioCategoria() {
                         placeholder="Tipo"
                         name='tipo'
                         className="border-2 border-slate-700 rounded p-2"
-                        value={categoria.tipo}
+                        value={categoria.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
 
                     />
